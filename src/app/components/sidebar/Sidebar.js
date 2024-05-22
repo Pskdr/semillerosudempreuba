@@ -21,6 +21,12 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
+          <Link href='/'>
+            <FaHome className={styles.icon} />
+            Home
+          </Link>
+        </li>
+        <li>
           <Link href='/my-tasks'>
             <FaTasks className={styles.icon} />
             My Tasks
