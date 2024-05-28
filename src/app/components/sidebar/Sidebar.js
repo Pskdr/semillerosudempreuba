@@ -9,16 +9,15 @@ import {
   FaCog,
 } from 'react-icons/fa';
 import styles from './Sidebar.module.css';
+import udem from './udem.png';
+import Image from 'next/image';
 
 const Sidebar = () => {
   return (
     <nav className={styles.sidebar}>
       <ul className={styles.menu}>
         <li>
-          <Link href='/'>
-            <FaHome className={styles.icon} />
-            Home
-          </Link>
+          <Image src={udem} alt='udem logo' />
         </li>
         <li>
           <Link href='/'>
