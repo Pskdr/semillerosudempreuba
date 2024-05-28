@@ -1,6 +1,5 @@
 .blueBackground {
     background-color: rgba(0, 0, 255, 0.5);
-    /* Blue color with 50% transparency */
     padding: 20px;
     border-radius: 20px;
     width: 450px;
@@ -10,7 +9,8 @@
     margin: auto;
     justify-content: center;
     color: #ffff;
-    font-size: 60px;
+    font-size: 55px;
+    text-align: center;;
     margin-top: 20px;
     margin-left: 40px;
 }

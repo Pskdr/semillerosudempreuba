@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '..avatar/Avatar';
 import TaskCard from './TaskCard';
-import styles from '../styles/TaskSection.module.css';
+import styles from './TaskSection.module.css';
 
 const TaskSection = ({ section }) => {
   return (

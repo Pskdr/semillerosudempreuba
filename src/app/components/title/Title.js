@@ -1,9 +1,9 @@
 import styles from './Title.module.css';
 
-const BlueComponent = () => (
+const Title = () => (
   <div className={styles.blueBackground}>
     <p className={styles.text}>Semillero de investigación</p>
   </div>
 );
 
-export default BlueComponent;
+export default Title;
