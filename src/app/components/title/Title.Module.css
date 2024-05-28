@@ -1,0 +1,16 @@
+.blueBackground {
+    background-color: rgba(0, 0, 255, 0.5);
+    /* Blue color with 50% transparency */
+    padding: 20px;
+    border-radius: 20px;
+    width: 450px;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 10px;
+    margin: auto;
+    justify-content: center;
+    color: #ffff;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 40px;
+}

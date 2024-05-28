@@ -4,6 +4,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Header from './components/header/Header';
 import TaskBoard from './components/taskBoard/TaskBoard';
 import styles from './components/home/home.module.css';
+import Title from '../app/components/title/Title';
 import image from '../../public/avatar2.png';
 
 import image2 from '../../public/avatar.svg';
@@ -127,6 +128,7 @@ export default function Home() {
       <Sidebar />
       <main className={styles.main}>
         <Header members={members} />
+        <Title />
         <TaskBoard sections={sections} />
       </main>
     </div>
