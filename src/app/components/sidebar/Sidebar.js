@@ -8,6 +8,7 @@ import {
   FaUsers,
   FaCog,
 } from 'react-icons/fa';
+import { FcAssistant } from "react-icons/fc";
 import styles from './Sidebar.module.css';
 import udem from './udem.png';
 import Image from 'next/image';
@@ -19,7 +20,7 @@ const Sidebar = () => {
         <li>
           <Image src={udem} alt='udem logo' />
         </li>
-        <li>
+        <li style={{ marginTop: '150px' }}>
           <Link href='/'>
             <FaHome className={styles.icon} />
             Home
@@ -28,31 +29,25 @@ const Sidebar = () => {
         <li>
           <Link href='/my-tasks'>
             <FaTasks className={styles.icon} />
-            My Tasks
-          </Link>
-        </li>
-        <li>
-          <Link href='/inbox'>
-            <FaInbox className={styles.icon} />
-            Inbox
-          </Link>
-        </li>
-        <li>
-          <Link href='/analyze'>
-            <FaChartBar className={styles.icon} />
-            Analyze
+            Mis tareas
           </Link>
         </li>
         <li>
           <Link href='/members'>
             <FaUsers className={styles.icon} />
-            Members
+            Chat
           </Link>
         </li>
         <li>
           <Link href='/settings'>
             <FaCog className={styles.icon} />
-            Settings
+            Configuración
+          </Link>
+        </li>
+        <li style={{ marginTop:'200px' }}>
+          <Link href='/settings'>
+            <FcAssistant className={styles.icon} />
+            Luz gabriela
           </Link>
         </li>
       </ul>
