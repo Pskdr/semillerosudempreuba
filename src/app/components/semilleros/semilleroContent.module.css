@@ -1,0 +1,29 @@
+/* globals.css */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b82f6; /* Blue color */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sectionTitleIcon {
+    margin-right: 10px;
+  }
+  
+  .list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #4b5563; /* Dark gray color */
+  }
+  

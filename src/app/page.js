@@ -8,6 +8,7 @@ import Title from '../app/components/title/Title';
 import image from '../../public/avatar2.png';
 
 import image2 from '../../public/avatar.svg';
+import SemilleroContent from './components/semilleros/SemilleroContent';
 
 export default function Home() {
   const members = [
@@ -24,6 +25,8 @@ export default function Home() {
       name: 'Bob Johnson',
     },
   ];
+
+  const [isSemillero, setSemillero] = useState(false)
 
   const sections = [
     {
@@ -128,8 +131,15 @@ export default function Home() {
       <Sidebar />
       <main className={styles.main}>
         <Header members={members} />
-        <Title />
-        <TaskBoard sections={sections} />
+        {isSemillero ? <div>
+          <Title title='Semillero #' />
+          <SemilleroContent/>
+          </div> :
+         <div>
+          <Title title='Semillero de investigación' />
+          <TaskBoard sections={sections} isSemillero={isSemillero} setSemillero={setSemillero} />
+        </div> }
+        
       </main>
     </div>
   );

@@ -1,8 +1,8 @@
 import styles from './Title.module.css';
 
-const Title = () => (
+const Title = ({ title }) => (
   <div className={styles.blueBackground}>
-    <p className={styles.text}>Semillero de investigación</p>
+    <p className={styles.text}>{title}</p>
   </div>
 );
 

@@ -3,9 +3,9 @@ import Avatar from '../avatar/Avatar';
 import TaskCard from '../taskCard/TaskCard';
 import styles from './TaskSection.module.css';
 
-const TaskSection = ({ section }) => {
+const TaskSection = ({ section, isSemillero, setSemillero }) => {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} onClick={() => setSemillero(!isSemillero)}>
       <h3 className={styles.sectionTitle}>{section.title}</h3>
       <div className={styles.cards}>
         {section.tasks.map((task, index) => (
